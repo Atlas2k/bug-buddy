@@ -8,6 +8,7 @@ Feel free to download and use the Maven project. Any constructive criticism is w
 The program is it's current form has most of the essential functionality to be 
 useful for regular use. Bug buddy currently supports:
 
+* Easily setting custom MongoDB database URI.
 * Creating bug reports.
 * Adding updates and progress reports to individual reports.
 * Keeping track of report status as solved or in progress.
@@ -16,8 +17,14 @@ useful for regular use. Bug buddy currently supports:
 
 I will be adding more features as I use the program and find shortcomings in it's current state.
 ## Instructions
-* Simply create a MongoDB data base locally or on a cloud provider of your choice.
+* Simply create a MongoDB database locally or on a cloud provider of your choice.
 
-* Insert the MongoDB data base URI in line 12 of src/main/java/com/bugbuddy/App.java.
+* Create a database called bugs in which a collection called main should also be created.
+
+* When prompted enter the database URI of the previously created database into the console.
 
 * Once that's done you're off to the races!
+
+
+**Side note:** If you wish to change the database URI simply edit the DatabaseURI.txt file, 
+delete the current URI and add the new database link you wish to use.
