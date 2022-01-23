@@ -112,6 +112,9 @@ public class CommandHandler {
             case 0: // Exit program
                 System.exit(0);
                 break;
+            default:
+                io.update("Not a valid option. Please try again." + "\n");
+                break;
         }
     }
 }
